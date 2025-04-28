@@ -1,11 +1,17 @@
 import React from 'react'
+import linkedin from '../assets/linkedin.svg'
 
-const Footer = () => {
+const Footer = (props) => {
   return (
-    <div>
-        Dentro del componente Footer deberá contener un div con lo que ustedes quieran detallar como fin de página (x ejemplo podrían ser anclas a sus redes sociales o atajos a otras vistas)
+    <div className='footer'>
+            <a href="https://www.linkedin.com/in/juan-martin-molina-navarro-b2501321a/">
+                <img src={linkedin} alt="" srcset="" height="30px" />
+            </a>
+            <p>© 2025 {props.name}. Todos los derechos reservados.</p>
     </div>
   )
 }
 
 export default Footer
+
+
